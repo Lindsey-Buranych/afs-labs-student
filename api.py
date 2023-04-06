@@ -52,6 +52,7 @@ def get_recipes(param_list):
         image = recipe["recipe"]["image"]
         url = recipe["recipe"]["url"]
         ingredients = recipe["recipe"]["ingredientLines"]
+        # Testing last step
         # icons = []
         # for prod_name, prod_icon in query:
         #     for param in param_list:
@@ -60,7 +61,7 @@ def get_recipes(param_list):
         #             continue
 
         recipe_list.append({"name": name, "ingredients": ingredients, "image": image, "url": url})
-
+   
     if len(recipe_list) < 4 and len(params) > 1:
         get_recipes(params[1:])
 
