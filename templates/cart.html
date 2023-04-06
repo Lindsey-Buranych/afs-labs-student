@@ -46,8 +46,7 @@
 </div>
 
 <div class="col-md-5">
-    
-    {% if flag=="True" %}
+{% if flag=="True" %}
 
     <h2>Delivery Options</h2>
 {% raw %}
@@ -92,6 +91,7 @@
         <small>Please log in before placing your order. Not a member? <a href="/register">Register now!</a></small>
         </form>
 {% endraw %}
+
 {% else %}
 	{% raw %}
 	    <form name="deliveryOptions" ng-controller="FormController as formCtrl" ng-submit="deliveryOptions.$valid && validateDelivery()" novalidate>
