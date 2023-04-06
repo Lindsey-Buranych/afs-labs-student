@@ -4,7 +4,7 @@
 
 -- Dumped from database version 9.5.4
 -- Dumped by pg_dump version 9.5.4
-
+-- Adding a new comment per the lab instructions. 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
